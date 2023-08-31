@@ -70,7 +70,7 @@ function tonav() {
   });
   //修复没有弄右键菜单的童鞋无法回顶部的问题
   document.getElementById("page-name").innerText =
-    document.title.split(" | Fomalhaut🥝")[0];
+    document.title.split("TTchemistry")[0];
 }
 
 function scrollToTop() {
@@ -1261,7 +1261,7 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("09/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
@@ -1281,7 +1281,7 @@ function createtime1() {
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2023 By TT",
   ];
 
   setTimeout(
@@ -1332,7 +1332,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Oldpoem %c 你正在访问Oldpoemの小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1484,7 +1484,7 @@ function share_() {
       ? title.substring(0, title.length - 14)
       : title;
     navigator.clipboard.writeText(
-      "Fomalhaut🥝的站内分享\n标题：" +
+      "Oldpoem的站内分享\n标题：" +
         subTitle +
         "\n链接：" +
         url +
@@ -3594,7 +3594,7 @@ function setUniverse() {
 
 // 雪花开关
 if (localStorage.getItem("snow") == undefined) {
-  localStorage.setItem("snow", "none");
+  localStorage.setItem("snow", "blcok");
 }
 document.getElementById("snow").style.display = localStorage.getItem("snow");
 function setSnow() {
@@ -3811,10 +3811,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://ttishappy.oss-cn-hangzhou.aliyuncs.com/img/TTchemistry/8.webp);
+    --darkmode-bg:url(https://ttishappy.oss-cn-hangzhou.aliyuncs.com/img/TTchemistry/6.webp);
+    --mobileday-bg: url(https://ttishappy.oss-cn-hangzhou.aliyuncs.com/img/TTchemistry/2.webp);
+    --mobilenight-bg: url(https://ttishappy.oss-cn-hangzhou.aliyuncs.com/img/TTchemistry/9.webp);
   }`;
 }
 // 切换背景主函数
